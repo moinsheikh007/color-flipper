@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexColor Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-700 overflow-x-hidden" id="root">
+    <div class="flex flex-col items-center justify-center h-screen w-full gap-4 relative">
+        <span class="animate absolute top-5 right-5 bg-white py-3 px-6 rounded opacity-65 text-xl font-medium hidden z-10 shadow-2xl">Copyed</span>
+        <h1 class="text-5xl text-center font-bold text-white drop-shadow-2xl">Change the Background Color Randomly!</h1>
+        <div class="flex gap-4">
+            <input class="py-2 px-4 rounded text-xl" type="text" name="" id="colorInput" placeholder="#000000">
+            <button id="copyColor" class="bg-white py-2 px-4 rounded" title="Copy to Clipboard">Copy</button>
+        </div>
+        <button id="colorBtn" class="bg-white px-6 py-2 rounded ring-2 ring-blue-500 hover:bg-slate-500 hover:text-white text-xl font-medium duration-300">Change Color</button>
+    </div>
+
+
+    <!-- ===== Script File ==== -->
+    <script src="script/hex.js"></script>
+</body>
+</html>
